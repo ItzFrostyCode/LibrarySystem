@@ -35,15 +35,6 @@ namespace LibrarySystem.Modals
 
             // Show fine percentage (hardcoded to 5%)
             lblFinePercentage.Text = "5 %";
-
-            // Ensure DialogResult is set on close
-            this.FormClosing += FinePaymentForm_FormClosing;
-        }
-
-        private void FinePaymentForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (this.DialogResult == DialogResult.None)
-                this.DialogResult = DialogResult.Cancel;
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -67,6 +58,8 @@ namespace LibrarySystem.Modals
                 fineService.UpdateFine(_fine);
 
                 MessageBox.Show("Fine marked as paid.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Set DialogResult and close the form to return to FineManagementForm
                 this.DialogResult = DialogResult.OK;
                 this.Close();
             }

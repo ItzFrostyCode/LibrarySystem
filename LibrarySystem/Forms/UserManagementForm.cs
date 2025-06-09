@@ -42,6 +42,9 @@ namespace LibrarySystem.Forms
             ApplyCustomButtonStyle(btnLoans);
             ApplyCustomButtonStyle(btnFines);
             ApplyCustomButtonStyle(btnLogout);
+
+            // Set DataGridView header style for dark background and white text
+
         }
         private void btnClearFilters_Click(object sender, EventArgs e)
         {

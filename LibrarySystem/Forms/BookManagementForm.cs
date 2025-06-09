@@ -51,6 +51,9 @@ namespace LibrarySystem.Forms
             ApplyCustomButtonStyle(btnLoans);
             ApplyCustomButtonStyle(btnFines);
             ApplyCustomButtonStyle(btnLogout);
+
+
+
         }
 
         private void LoadBooks()

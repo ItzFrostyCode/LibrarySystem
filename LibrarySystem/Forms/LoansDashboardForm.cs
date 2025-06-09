@@ -47,6 +47,9 @@ namespace LibrarySystem.Forms
 
             this.dgvLoans.RowPostPaint += new DataGridViewRowPostPaintEventHandler(this.dgvLoans_RowPostPaint);
             dgvLoans.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+
+
+
         }
 
         private void UpdateReturnBookButtonState()

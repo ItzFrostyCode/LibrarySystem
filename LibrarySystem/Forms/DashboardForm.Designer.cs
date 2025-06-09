@@ -30,19 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashboardForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlSidebar = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnLogout = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnUserManagement = new System.Windows.Forms.Button();
             this.btnBookManagement = new System.Windows.Forms.Button();
             this.btnFines = new System.Windows.Forms.Button();
             this.btnLoans = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.lblTotalUsers = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblTotalBooks = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -83,10 +83,10 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlSidebar.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel4.SuspendLayout();
@@ -119,6 +119,16 @@
             this.panel1.Size = new System.Drawing.Size(1264, 72);
             this.panel1.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::LibrarySystem.Properties.Resources.Logo_white;
+            this.pictureBox1.Location = new System.Drawing.Point(34, 7);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(25, 3, 3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(65, 60);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -147,34 +157,12 @@
             this.pnlSidebar.TabIndex = 8;
             this.pnlSidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlSidebar_Paint);
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.lblTotalUsers);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Location = new System.Drawing.Point(225, 152);
-            this.panel2.Margin = new System.Windows.Forms.Padding(25, 35, 3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(236, 105);
-            this.panel2.TabIndex = 9;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::LibrarySystem.Properties.Resources.Total_Users;
-            this.pictureBox2.Location = new System.Drawing.Point(10, 20);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(10, 20, 3, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox2.TabIndex = 10;
-            this.pictureBox2.TabStop = false;
-            // 
             // btnLogout
             // 
             this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnLogout.Image = global::LibrarySystem.Properties.Resources.Icon_Default_Logout;
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLogout.Location = new System.Drawing.Point(12, 557);
@@ -192,7 +180,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::LibrarySystem.Properties.Resources.Icon_Active_Dashboard;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -208,7 +196,7 @@
             this.btnUserManagement.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnUserManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUserManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUserManagement.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnUserManagement.Image = global::LibrarySystem.Properties.Resources.Icon_Default_User;
             this.btnUserManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUserManagement.Location = new System.Drawing.Point(12, 143);
@@ -225,7 +213,7 @@
             this.btnBookManagement.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnBookManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBookManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBookManagement.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnBookManagement.Image = global::LibrarySystem.Properties.Resources.Icon_Default_Books;
             this.btnBookManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBookManagement.Location = new System.Drawing.Point(12, 206);
@@ -242,7 +230,7 @@
             this.btnFines.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnFines.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFines.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFines.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnFines.Image = global::LibrarySystem.Properties.Resources.Icon_Default_Fines;
             this.btnFines.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFines.Location = new System.Drawing.Point(12, 332);
@@ -259,7 +247,7 @@
             this.btnLoans.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLoans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLoans.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoans.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnLoans.Image = global::LibrarySystem.Properties.Resources.Icon_Default_Loans;
             this.btnLoans.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLoans.Location = new System.Drawing.Point(12, 269);
@@ -271,15 +259,29 @@
             this.btnLoans.UseVisualStyleBackColor = true;
             this.btnLoans.Click += new System.EventHandler(this.btnLoans_Click);
             // 
-            // pictureBox1
+            // panel2
             // 
-            this.pictureBox1.Image = global::LibrarySystem.Properties.Resources.Logo_white;
-            this.pictureBox1.Location = new System.Drawing.Point(34, 7);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(25, 3, 3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(65, 60);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.panel2.Controls.Add(this.lblTotalUsers);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Location = new System.Drawing.Point(225, 152);
+            this.panel2.Margin = new System.Windows.Forms.Padding(25, 35, 3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(236, 105);
+            this.panel2.TabIndex = 9;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // lblTotalUsers
+            // 
+            this.lblTotalUsers.AutoSize = true;
+            this.lblTotalUsers.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalUsers.ForeColor = System.Drawing.Color.Black;
+            this.lblTotalUsers.Location = new System.Drawing.Point(87, 59);
+            this.lblTotalUsers.Margin = new System.Windows.Forms.Padding(10, 15, 3, 0);
+            this.lblTotalUsers.Name = "lblTotalUsers";
+            this.lblTotalUsers.Size = new System.Drawing.Size(46, 25);
+            this.lblTotalUsers.TabIndex = 12;
+            this.lblTotalUsers.Text = "- - -";
             // 
             // label2
             // 
@@ -293,17 +295,15 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "Total Users:";
             // 
-            // lblTotalUsers
+            // pictureBox2
             // 
-            this.lblTotalUsers.AutoSize = true;
-            this.lblTotalUsers.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalUsers.ForeColor = System.Drawing.Color.Black;
-            this.lblTotalUsers.Location = new System.Drawing.Point(87, 59);
-            this.lblTotalUsers.Margin = new System.Windows.Forms.Padding(10, 15, 3, 0);
-            this.lblTotalUsers.Name = "lblTotalUsers";
-            this.lblTotalUsers.Size = new System.Drawing.Size(46, 25);
-            this.lblTotalUsers.TabIndex = 12;
-            this.lblTotalUsers.Text = "- - -";
+            this.pictureBox2.Image = global::LibrarySystem.Properties.Resources.Total_Users;
+            this.pictureBox2.Location = new System.Drawing.Point(10, 20);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(10, 20, 3, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
             // 
             // panel3
             // 
@@ -780,11 +780,11 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlSidebar.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

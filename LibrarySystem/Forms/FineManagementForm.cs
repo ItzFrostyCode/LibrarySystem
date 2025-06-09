@@ -51,6 +51,8 @@ namespace LibrarySystem.Forms
 
             this.dgvFines.RowPostPaint += new DataGridViewRowPostPaintEventHandler(this.dgvFines_RowPostPaint);
 
+
+
         }
 
         private void dgvFines_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
@@ -234,10 +236,11 @@ namespace LibrarySystem.Forms
             if (dgvFines.Rows.Count > 0)
             {
                 dgvFines.ClearSelection();
-                dgvFines.Rows[0].Selected = true;
-                // Manually trigger selection changed to update btnPayFine state
-                dgvFines_SelectionChanged(dgvFines, EventArgs.Empty);
+                // Do NOT select any row or call dgvFines_SelectionChanged
+                selectedFine = null;
+                btnPayFine.Enabled = false;
             }
+
         }
 
         private void dgvFines_SelectionChanged(object sender, EventArgs e)
@@ -262,10 +265,8 @@ namespace LibrarySystem.Forms
         private void btnPayFine_Click(object sender, EventArgs e)
         {
             if (selectedFine == null)
-            {
-                MessageBox.Show("Please select a fine to pay.");
                 return;
-            }
+
             using (var finePaymentForm = new FinePaymentForm(selectedFine))
             {
                 if (finePaymentForm.ShowDialog() == DialogResult.OK)
@@ -274,6 +275,7 @@ namespace LibrarySystem.Forms
                 }
             }
         }
+
 
         private class UserListBoxItem
         {
@@ -317,7 +319,6 @@ namespace LibrarySystem.Forms
             this.Close();
         }
         // Navigation End
-
 
         // Apply custom style to buttons Start
         private void ApplyCustomButtonStyle(Button btn)
@@ -387,7 +388,6 @@ namespace LibrarySystem.Forms
                 TextFormatFlags.VerticalCenter | TextFormatFlags.Left
             );
         }
-
         // Apply custom style to buttons End
     }
 }

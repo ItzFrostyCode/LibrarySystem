@@ -120,7 +120,7 @@
             this.txtUserID.Location = new System.Drawing.Point(29, 137);
             this.txtUserID.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
             this.txtUserID.Name = "txtUserID";
-            this.txtUserID.Size = new System.Drawing.Size(263, 29);
+            this.txtUserID.Size = new System.Drawing.Size(85, 29);
             this.txtUserID.TabIndex = 17;
             this.txtUserID.TextChanged += new System.EventHandler(this.txtUserID_TextChanged);
             // 
@@ -152,7 +152,7 @@
             // 
             this.lblDueDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblDueDate.AutoSize = true;
-            this.lblDueDate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDueDate.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDueDate.Location = new System.Drawing.Point(137, 456);
             this.lblDueDate.Name = "lblDueDate";
             this.lblDueDate.Size = new System.Drawing.Size(36, 21);
@@ -175,7 +175,7 @@
             // 
             this.lblLoanDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblLoanDate.AutoSize = true;
-            this.lblLoanDate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLoanDate.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLoanDate.Location = new System.Drawing.Point(137, 406);
             this.lblLoanDate.Name = "lblLoanDate";
             this.lblLoanDate.Size = new System.Drawing.Size(36, 21);
@@ -198,7 +198,7 @@
             // 
             this.lblReturnDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblReturnDate.AutoSize = true;
-            this.lblReturnDate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReturnDate.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblReturnDate.Location = new System.Drawing.Point(137, 502);
             this.lblReturnDate.Name = "lblReturnDate";
             this.lblReturnDate.Size = new System.Drawing.Size(36, 21);
@@ -221,7 +221,7 @@
             // 
             this.lblOverdueStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblOverdueStatus.AutoSize = true;
-            this.lblOverdueStatus.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOverdueStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOverdueStatus.Location = new System.Drawing.Point(451, 406);
             this.lblOverdueStatus.Name = "lblOverdueStatus";
             this.lblOverdueStatus.Size = new System.Drawing.Size(36, 21);
@@ -244,7 +244,7 @@
             // 
             this.lblFineAmount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFineAmount.AutoSize = true;
-            this.lblFineAmount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFineAmount.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFineAmount.Location = new System.Drawing.Point(451, 502);
             this.lblFineAmount.Name = "lblFineAmount";
             this.lblFineAmount.Size = new System.Drawing.Size(36, 21);
@@ -267,7 +267,7 @@
             // 
             this.lblFinePercentage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFinePercentage.AutoSize = true;
-            this.lblFinePercentage.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFinePercentage.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFinePercentage.Location = new System.Drawing.Point(451, 456);
             this.lblFinePercentage.Name = "lblFinePercentage";
             this.lblFinePercentage.Size = new System.Drawing.Size(36, 21);
@@ -289,11 +289,12 @@
             // btnCancel
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Location = new System.Drawing.Point(29, 562);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(135, 40);
+            this.btnCancel.Size = new System.Drawing.Size(135, 49);
             this.btnCancel.TabIndex = 35;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -302,38 +303,47 @@
             // btnLost
             // 
             this.btnLost.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnLost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
+            this.btnLost.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLost.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLost.ForeColor = System.Drawing.Color.White;
             this.btnLost.Location = new System.Drawing.Point(199, 562);
             this.btnLost.Name = "btnLost";
-            this.btnLost.Size = new System.Drawing.Size(135, 40);
+            this.btnLost.Size = new System.Drawing.Size(135, 49);
             this.btnLost.TabIndex = 36;
             this.btnLost.Text = "Lost";
-            this.btnLost.UseVisualStyleBackColor = true;
+            this.btnLost.UseVisualStyleBackColor = false;
             this.btnLost.Click += new System.EventHandler(this.btnLost_Click);
             // 
             // btnWaived
             // 
             this.btnWaived.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnWaived.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
+            this.btnWaived.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnWaived.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWaived.ForeColor = System.Drawing.Color.White;
             this.btnWaived.Location = new System.Drawing.Point(369, 562);
             this.btnWaived.Name = "btnWaived";
-            this.btnWaived.Size = new System.Drawing.Size(135, 40);
+            this.btnWaived.Size = new System.Drawing.Size(135, 49);
             this.btnWaived.TabIndex = 37;
             this.btnWaived.Text = "Waived";
-            this.btnWaived.UseVisualStyleBackColor = true;
+            this.btnWaived.UseVisualStyleBackColor = false;
             this.btnWaived.Click += new System.EventHandler(this.btnWaived_Click);
             // 
             // btnReturn
             // 
             this.btnReturn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnReturn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
+            this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReturn.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturn.ForeColor = System.Drawing.Color.White;
             this.btnReturn.Location = new System.Drawing.Point(540, 562);
             this.btnReturn.Margin = new System.Windows.Forms.Padding(3, 3, 20, 3);
             this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(135, 40);
+            this.btnReturn.Size = new System.Drawing.Size(135, 49);
             this.btnReturn.TabIndex = 38;
             this.btnReturn.Text = "Return";
-            this.btnReturn.UseVisualStyleBackColor = true;
+            this.btnReturn.UseVisualStyleBackColor = false;
             this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
             // label7
@@ -350,7 +360,7 @@
             // lblFullName
             // 
             this.lblFullName.AutoSize = true;
-            this.lblFullName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFullName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFullName.Location = new System.Drawing.Point(28, 204);
             this.lblFullName.Name = "lblFullName";
             this.lblFullName.Size = new System.Drawing.Size(36, 21);
@@ -361,7 +371,7 @@
             // 
             this.lblBookSelected.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblBookSelected.AutoSize = true;
-            this.lblBookSelected.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBookSelected.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBookSelected.Location = new System.Drawing.Point(137, 364);
             this.lblBookSelected.Name = "lblBookSelected";
             this.lblBookSelected.Size = new System.Drawing.Size(36, 21);
@@ -385,7 +395,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.ClientSize = new System.Drawing.Size(704, 681);
+            this.ClientSize = new System.Drawing.Size(704, 657);
             this.Controls.Add(this.lblBookSelected);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.lblFullName);
